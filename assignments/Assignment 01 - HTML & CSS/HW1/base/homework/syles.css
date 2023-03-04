@@ -1,0 +1,99 @@
+
+.nav 
+{
+	border-bottom: 1px solid #e9eaea;
+}
+.nav a
+{
+  color: #5a5a5a;
+  padding: 14px 10px;
+  float: right;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+
+}
+
+.nav img{
+    background-image: url(images/logo-light.jpg);
+    border-radius: 50%;
+    width: 80px;
+}
+
+.nav li 
+{
+  display: inline;
+}
+.title 
+{
+	background-color: #fff;
+	height: 200px;
+}
+.title h1 
+{
+	color: #5a5a5a;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-top: 5px;
+	text-align: center;
+}
+.title h3
+{
+	color: #5a5a5a;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-top: 10px;
+	text-align: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+ 
+   .box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+   }
+ 
+   .image {
+    width: 150px;
+    height: 150px;
+    background-image: url('images/activity-1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+   }
+ 
+   .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+   }
+ 
+   .label {
+    font-size: 24px;
+    margin-bottom: 10px;
+   }
+ 
+   .qucc {
+    font-size: 18px;
+   }
+ 
+   .date {
+    font-size: 18px;
+    text-align: right;
+             float: right;
+   }
