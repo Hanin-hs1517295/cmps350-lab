@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Sample HTML</title>
+ <link rel="stylesheet" href="syles.css">
+</head>
+
+<body>
+    <div class="nav" id="navScroll">
+        <div class="container">
+            <ul class="pull-left">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="images/logo-light.jpg" alt="logoimage">
+        </div>
+    </div>
+
+
+
+    <div class="title">
+        <h1>Hi, we are <span style="color: blue;"> the Quantum Computing.
+                <br><span style="color: #5a5a5a;"> A QU Student Club </h1>
+        <h3> Empowering innovation through technology and community
+        </h3>
+
+    </div>
+
+
+    <h1 style="text-align:center"> Latest Club Activities </h1>
+ <div class="container">
+  <div class="box">
+   <div class="image">
+ 
+   </div>
+   <div class="content">
+    <button class="button">Robotics</button>
+    <div class="label">Robo - Vision: Giving your robot eyes</div>
+    <div class="qucc">QUCC <span class="date"></span></div>
+   </div>
+  </div>
+ </div>
+
+ <script>
+  // Get the date and time and format it as Jan 17, 2022 ? 3 min
+  function formatDate(date) {
+   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+   const day = date.getDate();
+   const month = months[date.getMonth()];
+   const year = date.getFullYear();
+   const hours = date.getHours();
+   const minutes = date.getMinutes();
+   return `${month} ${day}, ${year} &#x23F1; 3 min`;
+  }
+
+  // Update the date element every minute
+  function updateDate() {
+   const dateElement = document.querySelector('.date');
+   const now = new Date();
+   dateElement.innerHTML = formatDate(now);
+  }
+
+  updateDate();
+  setInterval(updateDate, 60000);
+ </script>
+</body>
+</html>
