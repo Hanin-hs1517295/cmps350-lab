@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Naskh+Arabic:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+button {
+  margin: 0;
+  border-radius: 10px;
+  border: none;
+  padding: 7px 10px 5px 9px;
+  cursor: pointer;
+}
+
+#add-photo {
+  margin-bottom: 20px;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 15px;
+  margin: 0 20px;
+}
+
+#gallery img {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
